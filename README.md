@@ -22,7 +22,7 @@
 
 * Inside return statement, `<BrowserRouter>..<Routes>...<Route/>`
 
-* Instead of writing full code for any page, we will make a jsx file for each page component and then link it into <Route/> for better visibility and readability. It is also the best practice to perform.
+* Instead of writing full code for any page, we will make a jsx file for each page component and then link it into `<Route/>` for better visibility and readability. It is also the best practice to perform.
 
 * Make new component, export it, import to App.jsx then set the routing as `<Route path='/' element= {<Home/>} />`. Better to use PascalCase while naming the component and file name.
 
@@ -35,42 +35,43 @@
 * `<tagName style={{color: 'red', backgroundColor: 'navy'}}> Inline CSS </tagname>`
 
 * For using external CSS, follow the following steps:
-    * make the new external css file suppose Name.css
+    * make the new external css file suppose `Name.css`
     * then import that css file to the respective jsx file as : `import './Name.css'`
 
 
 ## Navigation in React (Anchor Tag Alternative)
+Use case : to avoid full page reload and preserve application state 
 * Alt1- Using Function call
-* Alt2- Using 'useNavigate' hook
-* Alt3- Using 'link' component provided by react-router-dom
+* Alt2- Using `useNavigate` hook
+* Alt3- Using `Link` component provided by `react-router-dom`
     * Just replace `<a href='/home'> click me </a>` with `<Link to='/home'> click me </Link>`
 
 
 ## About File structure
-* node_modules : required dependencies and packages storage, download when npm install command is run
+* `node_modules` : required dependencies and packages storage, download when npm install command is run
 
-* public : Used for static assets like images, icons, or fonts that don’t go through the build process.
+* `public` : Used for static assets like images, icons, or fonts that don’t go through the build process.
 
-* src : the place where we interact the most - heart of our app, where actual code lies.
-    * assets : a subfolder for images, fonts, or other static resources used in your components.
-    * App.css : Styles specific to the App.jsx component.
-    * App.jsx : The main React component—often the root of your component tree where we define the layout and logic of your app’s core UI.
-    * index.css : Global styles applied across your entire app. Useful for setting base styles like fonts, margins, or resets.
-    * main.jsx : Entry point of our react app. It renders the App component into the DOM using ReactDOM.createRoot.
+* `src` : the place where we interact the most - heart of our app, where actual code lies.
+    * `assets` : a subfolder for images, fonts, or other static resources used in your components.
+    * `App.css` : Styles specific to the App.jsx component.
+    * `App.jsx` : The main React component—often the root of your component tree where we define the layout and logic of your app’s core UI.
+    * `index.css` : Global styles applied across your entire app. Useful for setting base styles like fonts, margins, or resets.
+    * `main.jsx` : Entry point of our react app. It renders the App component into the DOM using ReactDOM.createRoot.
 
-* .gitignore : Tells Git which files/folders to ignore (e.g., node_modules, .env, build files).
+* `.gitignore` : Tells Git which files/folders to ignore (e.g., node_modules, .env, build files).
 
-* eslint.config.js : Configuration for ESLint, which helps catch syntax and style issues.
+* `eslint.config.js` : Configuration for ESLint, which helps catch syntax and style issues.
 
-* index.html : The base HTML file loaded in the browser. Vite injects your React app into this file during build.
+* `index.html` : The base HTML file loaded in the browser. Vite injects your React app into this file during build.
 
-* package-lock.json : Generated automatically when we install packages. Locks the exact versions of dependencies to ensure consistent installs.
+* `package-lock.json` : Generated automatically when we install packages. Locks the exact versions of dependencies to ensure consistent installs.
 
-* package.json : Blueprint of project. Lists dependencies, scripts (like dev, build, start), and metadata.
+* `package.json` : Blueprint of project. Lists dependencies, scripts (like dev, build, start), and metadata.
 
-* README.md : Great place to describe your project, setup instructions, and usage. From which we are seeing this documentation.
+* `README.md` : Great place to describe your project, setup instructions, and usage. From which we are seeing this documentation.
 
-* vite.config.js : Configuration of vite. You can customize build options, plugins, aliases, and more.
+* `vite.config.js` : Configuration of vite. You can customize build options, plugins, aliases, and more.
 
 
 ## Some definitions
