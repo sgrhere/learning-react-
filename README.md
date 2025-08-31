@@ -2,15 +2,15 @@
 
 ## React + Vite Setup
 1) `npm create vite@latest`
-    set project name as './' to do setup in same directory,
+    set project name as './' to do setup in same directory. <br>
     Choose: React as framework & JS as variant as per now
     
 2) `npm install` - to install required packages
 
-3) `npm run dev` - to run the project
-    this can be changed to npm start by changing dev script to start.
+3) `npm run dev` - to run the project <br>
+    This can be changed to npm start by changing dev script to start.
 
-4) Now, modify the content of App.jsx file which contains the component. 
+4) Now, modify the content of App.jsx file which contains the component. <br>
     Review the comments given in the code for further details. <br>
 .<br>
 .<br>
