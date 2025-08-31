@@ -11,9 +11,9 @@
     this can be changed to npm start by changing dev script to start.
 
 4) Now, modify the content of App.jsx file which contains the component. 
-    Review the comments given in the code for further details.
-.
-.
+    Review the comments given in the code for further details. <br>
+.<br>
+.<br>
 5) `npm i react-router-dom`  - to install react router & follow router steps
 
 
