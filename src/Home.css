@@ -1,0 +1,46 @@
+/* External CSS example code */
+/* h2{
+    background-color: red;
+    color: navy;
+} */
+
+/* Transforming HTML & CSS design into React - Design from Chatgpt */
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+nav {
+background: #333;
+color: white;
+padding: 10px 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+nav .logo {
+font-size: 18px;
+font-weight: bold;
+}
+nav ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+nav ul li {
+margin-left: 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+.content {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh;
+background: #f4f4f4;
+font-size: 24px;
+font-weight: bold;
+}
