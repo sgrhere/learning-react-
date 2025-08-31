@@ -1,36 +1,50 @@
 # React virtual note
 
 ## React + Vite Setup
-1) npm create vite@latest
+1) `npm create vite@latest`
     set project name as './' to do setup in same directory,
     Choose: React as framework & JS as variant as per now
-2) npm install - to install required packages
-3) npm run dev - to run the project
+    
+2) `npm install` - to install required packages
+
+3) `npm run dev` - to run the project
     this can be changed to npm start by changing dev script to start.
-4) Now, modify the content of App.jsx file which contains the component
-5) Look at the comments given in the code for further code details.
-..
-6) npm i react-router-dom  - to install react router & follow router steps
+
+4) Now, modify the content of App.jsx file which contains the component. 
+    Review the comments given in the code for further details.
+.
+.
+5) `npm i react-router-dom`  - to install react router & follow router steps
+
 
 ## Router Steps:-
-* import required component using: import {BrowserRouter, Routes, Route} from 'react-router-dom'
-* Inside return statement, <!-- <BrowserRouter>..<Routes>...<Route/> -->
+* import required component using: `import {BrowserRouter, Routes, Route} from 'react-router-dom'`
+
+* Inside return statement, `<BrowserRouter>..<Routes>...<Route/>`
+
 * Instead of writing full code for any page, we will make a jsx file for each page component and then link it into <Route/> for better visibility and readability. It is also the best practice to perform.
-* Make new component, export it, import to App.jsx then set the routing as <Route path='/' element= {<Home/>} />. Better to use PascalCase while naming the component and file name.
+
+* Make new component, export it, import to App.jsx then set the routing as `<Route path='/' element= {<Home/>} />`. Better to use PascalCase while naming the component and file name.
+
 
 ## Adding styles to specific components:-
 * camelCase is used (font-size in css = fontSize in React)
-* className is used (in html, class = ' ' but in jsx className should be given)
+
+* className is used (in html, class = ' ' but in jsx class should be replaced by className)
+
 * `<tagName style={{color: 'red', backgroundColor: 'navy'}}> Inline CSS </tagname>`
+
 * For using external CSS, follow the following steps:
     * make the new external css file suppose Name.css
-    * then import that css file to the respective jsx file as : import './Name.css'
+    * then import that css file to the respective jsx file as : `import './Name.css'`
+
 
 ## Navigation in React (Anchor Tag Alternative)
 * Alt1- Using Function call
 * Alt2- Using 'useNavigate' hook
 * Alt3- Using 'link' component provided by react-router-dom
-    * Just replace <a href='/home'> click me </a> with <Link to='/home'> click me </Link>
+    * Just replace `<a href='/home'> click me </a>` with `<Link to='/home'> click me </Link>`
+
 
 ## About File structure
 * node_modules : required dependencies and packages storage, download when npm install command is run
@@ -57,6 +71,7 @@
 * README.md : Great place to describe your project, setup instructions, and usage. From which we are seeing this documentation.
 
 * vite.config.js : Configuration of vite. You can customize build options, plugins, aliases, and more.
+
 
 ## Some definitions
 1) React JS
