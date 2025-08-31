@@ -14,14 +14,14 @@
 
 ## Router Steps:-
 * import required component using: import {BrowserRouter, Routes, Route} from 'react-router-dom'
-* Inside return statement, <BrowserRouter>..<Routes>...<Route/>
+* Inside return statement, <!-- <BrowserRouter>..<Routes>...<Route/> -->
 * Instead of writing full code for any page, we will make a jsx file for each page component and then link it into <Route/> for better visibility and readability. It is also the best practice to perform.
 * Make new component, export it, import to App.jsx then set the routing as <Route path='/' element= {<Home/>} />. Better to use PascalCase while naming the component and file name.
 
 ## Adding styles to specific components:-
 * camelCase is used (font-size in css = fontSize in React)
 * className is used (in html, class = ' ' but in jsx className should be given)
-* <tagName style={{color: 'red', backgroundColor: 'navy'}}> Inline CSS </tagname>
+* `<tagName style={{color: 'red', backgroundColor: 'navy'}}> Inline CSS </tagname>`
 * For using external CSS, follow the following steps:
     * make the new external css file suppose Name.css
     * then import that css file to the respective jsx file as : import './Name.css'
