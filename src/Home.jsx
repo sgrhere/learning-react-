@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Home.css'
+import Card from './Card';
 
 function Home() {
     return (
@@ -18,12 +19,14 @@ function Home() {
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="#">Services</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/test">Test</Link></li>
                 </ul>
             </nav>
 
+                <Card title="Home Page" btn="Padhna Parxa" bgc="'red'"/>  {/* // using card components in multiple pages.*/}
 
             <div className="content">
-                Something in between 😄
+                Yesh bhitra kei xa hai, bichha bichhama 😄
             </div>
 
         </>

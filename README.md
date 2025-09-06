@@ -47,6 +47,31 @@ Use case : to avoid full page reload and preserve application state
     * Just replace `<a href='/home'> click me </a>` with `<Link to='/home'> click me </Link>`
 
 
+## Using Components for code reusability
+* Instead of doing this to apply same kind of property to different elements..
+```
+<button style={{backgroundColor: 'red' , padding: '10px' , color: 'white'}}>Register</button> 
+<button style={{backgroundColor: 'red' , padding: '10px' , color: 'white'}}>Login</button>
+<button style={{backgroundColor: 'red' , padding: '10px' , color: 'white'}}>Logout</button> 
+```
+* We can make a component for that element such that we can import it and use it wherever needed. <br>
+```
+Keep this kind of code and export it.
+<button style={{backgroundColor: 'red' , padding: '10px' , color: 'white'}}>argument.haha</button> 
+export default componentName
+```
+* But, importing and using will make it static, means the content remains the same as defined in the recently made component. So, to make it dynamic, we will use props (property) in react. It's like passing argument while calling the function. This means that, we will pass a property(props/argument) while using component in the file where it is used. Such that it will pass that value whenever it calls that recurring component.
+
+* import it as : `import Button from "./Button";`
+    Then, give a attribute/property to the element with content to be delievered. Doing this will pass the value of property as argument to the reusable component. It treats that attribute as an object.
+```
+<Button haha="Register" />
+<Button haha="Login" />
+<Button haha="Logout" />
+```
+* We can also pass multiple props just by adding as much as required arguments.
+
+
 ## About File structure
 * `node_modules` : required dependencies and packages storage, download when npm install command is run
 
@@ -92,3 +117,9 @@ Use case : to avoid full page reload and preserve application state
     It is a popular JS compiler that allows developers to use newer JS syntax features in their code, even if the target environment doesn't support them natively. It's often used to write code in the latest ECMASCRIPT(ES) standards while ensuring compatibility with older browsers or environments. Key feature of Babel is transpilation.
 
     Note:-The browser only understand html,css and js, here we use jsx to write html code inside js but jsx isn't understood by the browser so to solve that limitation, babel is used.
+
+7) Component 
+    A component in React is a reusable, independent piece of code that defines the structure and behavior of the user interface (UI). It is essentially like a JavaScript function or class that returns React elements (which describe what should appear on the screen). Components make it easier to build and manage complex UIs by breaking them into smaller, manageable pieces.
+
+8) Props
+    In React, props (short for "properties") are a way to pass data from a parent component to a child component. They are immutable, meaning they cannot be modified by the child component, ensuring a unidirectional data flow.
