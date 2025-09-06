@@ -100,26 +100,26 @@ export default componentName
 
 
 ## Some definitions
-1) React JS
+1) React JS <br>
     It is a popular JS library for building UI for web apps. It was created and maintained by Facebook and is widely adopted by developers due to its efficiency, flexibility and component-based architecture. File extension is jsx.
 
 2) Diffing - It is the process of getting difference between current VDOM and previous VDOM
 
 3) Reconcillation - It is the process of injecting the difference between VDOM in DOM.
 
-4) Compilation
+4) Compilation <br>
     It involves translating high-level programming language code directly into machine code. This machine code is specific to a particular hardware architecture and can be executed directly by the CPU.
 
-5) Transpilation
+5) Transpilation <br>
     It is the process of converting a language into an equivalent version of the same language. Modern js can be transpiled into older syntax, making it compatible with older browsers.
 
-6) Babel: A JS Compiler
+6) Babel: A JS Compiler <br>
     It is a popular JS compiler that allows developers to use newer JS syntax features in their code, even if the target environment doesn't support them natively. It's often used to write code in the latest ECMASCRIPT(ES) standards while ensuring compatibility with older browsers or environments. Key feature of Babel is transpilation.
 
     Note:-The browser only understand html,css and js, here we use jsx to write html code inside js but jsx isn't understood by the browser so to solve that limitation, babel is used.
 
-7) Component 
+7) Component <br>
     A component in React is a reusable, independent piece of code that defines the structure and behavior of the user interface (UI). It is essentially like a JavaScript function or class that returns React elements (which describe what should appear on the screen). Components make it easier to build and manage complex UIs by breaking them into smaller, manageable pieces.
 
-8) Props
+8) Props<br>
     In React, props (short for "properties") are a way to pass data from a parent component to a child component. They are immutable, meaning they cannot be modified by the child component, ensuring a unidirectional data flow.
