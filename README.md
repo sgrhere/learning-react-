@@ -20,7 +20,7 @@
 ## Router Steps:-
 * import required component using: `import {BrowserRouter, Routes, Route} from 'react-router-dom'`
 
-* Inside return statement, `<BrowserRouter>..<Routes>...<Route/>`
+* Inside return statement, `<BrowserRouter>..<Routes>. <Route>...<Route/>.<Routes/>..<BrowserRouter/>`
 
 * Instead of writing full code for any page, we will make a jsx file for each page component and then link it into `<Route/>` for better visibility and readability. It is also the best practice to perform.
 
@@ -62,7 +62,7 @@ export default componentName
 ```
 * But, importing and using will make it static, means the content remains the same as defined in the recently made component. So, to make it dynamic, we will use props (property) in react. It's like passing argument while calling the function. This means that, we will pass a property(props/argument) while using component in the file where it is used. Such that it will pass that value whenever it calls that recurring component.
 
-* import it as : `import Button from "./Button";`
+* import it as : `import Button from "./Button";` <br>
     Then, give a attribute/property to the element with content to be delievered. Doing this will pass the value of property as argument to the reusable component. It treats that attribute as an object.
 ```
 <Button haha="Register" />
@@ -70,6 +70,18 @@ export default componentName
 <Button haha="Logout" />
 ```
 * We can also pass multiple props just by adding as much as required arguments.
+
+## Hooks in React
+* `useState` - lets your component remember values (like user input) works like variable <br>
+    If the value of variable is changing then we don't use variable to store such value since in react, variable's value is updated internally but the updates are not visible externally like in javascript or other programming logic. <br>
+
+    ` var count = 0;`
+    * Doing this, the value of count is always displayed 0 by the browser. So, for the variables whose value keeps changing, we use useState function or hook of react.
+
+    ` const [value, setValue] = useState(0)`
+    * Here, value is variable that holds 1st value as 0 & setvalue is a function.
+    Follow, the code file `UseState.jsx` to review code.
+
 
 
 ## About File structure
@@ -123,3 +135,6 @@ export default componentName
 
 8) Props<br>
     In React, props (short for "properties") are a way to pass data from a parent component to a child component. They are immutable, meaning they cannot be modified by the child component, ensuring a unidirectional data flow.
+
+9) Hooks <br>
+    React Hooks are special functions that let you use features like state, side effects, and context in function components—without needing to write class components.
