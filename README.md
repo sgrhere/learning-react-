@@ -98,7 +98,8 @@ export default componentName
            ....
          },[])    
 
-    2 argument need to be passed. First arg is function and 2nd arg is array (dependency array) which is empty.
+    2 argument need to be passed.
+    First arg is function and 2nd arg is array (dependency array) which is empty.
     ```
 
     * Second type - same as first with some state (15% used)
@@ -114,7 +115,8 @@ export default componentName
         ....
          })     
 
-     Executes upon any changes in a project no dependency array. Can be used for real time project but better to use WebSocket instead of this.
+     Executes upon any changes in a project no dependency array.
+     Can be used for real time project but better to use WebSocket instead of this.
      ```
      Follow, the code file `LearnuseEffect.jsx` to review code.
 
