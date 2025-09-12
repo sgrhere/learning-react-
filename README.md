@@ -26,6 +26,8 @@
 
 * Make new component, export it, import to App.jsx then set the routing as `<Route path='/' element= {<Home/>} />`. Better to use PascalCase while naming the component and file name.
 
+* Keep path's name in kebab-case `/pathname = /path-name`
+
 
 ## Adding styles to specific components:-
 * camelCase is used (font-size in css = fontSize in React)
@@ -79,9 +81,40 @@ export default componentName
     * Doing this, the value of count is always displayed 0 by the browser. So, for the variables whose value keeps changing, we use useState function or hook of react.
 
     ` const [value, setValue] = useState(0)`
-    * Here, value is variable that holds 1st value as 0 & setvalue is a function.
+    * Here, value is variable that holds 1st value as 0 & setvalue is a function. <br>
     Follow, the code file `UseState.jsx` to review code.
 
+* `useEffect` - subscription (getting notified and doing action when any event is trigerred) <br>
+    It is a React Hook that lets you perform side effects in functional components. Think of side effects as anything that interacts with the outside world or changes something beyond the scope of the component—like fetching data, setting up subscriptions, or manually updating the DOM. In React, side effects include:
+    * Fetching data from an API
+    * Setting up event listeners or timers
+    * Updating the document title
+    * Subscribing to external services (e.g., WebSocket) <br>
+
+    Types of useEffect - 3 types (trigger point) 
+    * First type - base syntax (80% used) executes on page visit
+    ```
+         useEffect(()=>{
+           ....
+         },[])     
+    ```
+    2 argument need to be passed. First arg is function and 2nd arg is array (dependency array) which is empty.
+
+    * Second type - same as first with some state (15% used)
+     ```
+         useEffect(()=>{
+           ....
+         },[state1])     
+    ```
+
+    * Third type - only one argument (function) 5% used
+     ```
+         useEffect(()=>{
+        ....
+         })     
+     ```
+     Executes upon any changes in a project no dependency array. Can be used for real time project but better to use WebSocket instead of this. <br>
+     Follow, the code file `LearnuseEffect.jsx` to review code.
 
 
 ## About File structure

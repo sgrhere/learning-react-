@@ -20,7 +20,8 @@ function Home() {
                     <li><Link to="#">Services</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/test">Test</Link></li>
-                    <li><Link to="/useState">useState</Link></li>
+                    <li><Link to="/use-state">useState</Link></li>
+                    <li><Link to="/use-effect">useEffect</Link></li>
                 </ul>
             </nav>
 
