@@ -78,7 +78,7 @@ export default componentName
     If the value of variable is changing then we don't use variable to store such value since in react, variable's value is updated internally but the updates are not visible externally like in javascript or other programming logic. <br>
 
     ` var count = 0;`
-    * Doing this, the value of count is always displayed 0 by the browser. So, for the variables whose value keeps changing, we use useState function or hook of react.
+    * Doing this, the value of count is always displayed 0 by the browser even if the value of count is incremented or decremented. So, for the variables whose value keeps changing, we use useState function or hook of react.
 
     ` const [value, setValue] = useState(0)`
     * Here, value is variable that holds 1st value as 0 & setvalue is a function. <br>
@@ -96,9 +96,10 @@ export default componentName
     ```
          useEffect(()=>{
            ....
-         },[])     
-    ```
+         },[])    
+
     2 argument need to be passed. First arg is function and 2nd arg is array (dependency array) which is empty.
+    ```
 
     * Second type - same as first with some state (15% used)
      ```
@@ -112,8 +113,9 @@ export default componentName
          useEffect(()=>{
         ....
          })     
+
+     Executes upon any changes in a project no dependency array. Can be used for real time project but better to use WebSocket instead of this.
      ```
-     Executes upon any changes in a project no dependency array. Can be used for real time project but better to use WebSocket instead of this. <br>
      Follow, the code file `LearnuseEffect.jsx` to review code.
 
 
